@@ -10,7 +10,9 @@
 .logoFont{
     font-family: 'Grandstander',
     cursive;
-    color: rgb(85, 205, 85);
+    font-family: 'Stalinist One',
+    cursive;
+    color: #b757ce;
 }
 /* for attribution of image */
 .imageAttrib{
