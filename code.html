@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name*: Coding Project by Greg Layton</title>
+    <title>MirrorWorld: Coding Project by Greg Layton</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -52,7 +52,7 @@
                         <a class="nav-link" href="app.html">The App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
+                        <a class="nav-link active" aria-current="page" href="code.html"><span>The Code</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://glayton.com/about">About Me</a>
@@ -68,9 +68,31 @@
                 <div class="col-lg-8">
                     <pre class="line-numbers">
                         <code class="lang-js">
-                            // Call Hello World
-                            function HelloWorld(){
-                            alert("Hello World!");
+                            //Controller
+                            function getString(){
+                            let userString = document.getElementById("userString").value;
+                            displayString(reverseString(userString));
+                            }
+
+                            //reverse the input string
+                            function reverseString(origString){
+                            let reversedString = [];
+                            for (i=origString.length; i>0; i--) {
+                            reversedString += origString[i-1];
+                            };
+                            return reversedString;
+                            }
+
+                            //display the reversed string
+                            function displayString(reversedString){
+                            document.getElementById("message").innerHTML = 
+                            `Your reversed string is: <b>${reversedString}</b>`;
+                            document.getElementById("alert").classList.remove("invisible");
+                            }
+
+                            // clear form
+                            function clearForm(){
+                            location.reload();
                             }
                         </code>
                     </pre>

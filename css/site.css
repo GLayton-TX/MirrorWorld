@@ -12,7 +12,7 @@
     cursive;
     font-family: 'Stalinist One',
     cursive;
-    color: #b757ce;
+    color: #ff52a1;
 }
 /* for attribution of image */
 .imageAttrib{
@@ -38,6 +38,10 @@ nav {
 }
 
 .navbar a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar a span {
     color: var(--secondary-color);
 }
 
