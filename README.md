@@ -1,2 +1,2 @@
-# MiniSiteTemplate
-Template for smaller projects/coding challenges
+# MirrorWorld
+Coding challenge to take in a string and reverse it.
